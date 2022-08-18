@@ -1,4 +1,4 @@
 # NAble-RMM-Run-Commands-As-User-Context
-This is a copy of the OneDrive script, but modified to be used to run things in User Context in RMM's checks and tasks.
+This script will allow you to run automated scripts from NAble RMM N-sight in the User context. Normally, scripts execute as SYSTEM. This script will get the currently logged on user and execute it as that user.
 
-NOTE: This will work only if a user is logged in, otherwise there will be no user context.
+NOTE: There must be a user logged into the machine, or this script will not work. If no user is logged in, the script is unable to obtain a user context.
